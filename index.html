@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blob</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav id="nav">
+            <img src="img/Logo.svg" alt="logo"/>
+            <h3 class="logo"> Snacc-inator </h3>
+        </nav>
+
+        <main>
+            <section class="page first" id="firstpage">
+                <div class="details first">
+                    <h1>Looking for some inspiration for your next meal?</h1>
+                    <p>No problem, we got you covered!</p>
+                </div>
+
+
+            </section>
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <section class="page second" id="secondpage">
+                <div class="details second">
+                    <h2>A mystical spinning blob?</h2>
+                    <p>This wonderful blob is here to give you some food inspiration. Click on this blob and it will give you
+                        an ingredient!</p>
+                    <p> What you do with the ingredient is up to you. Here are some ideas: </p>
+                    <li> Make your next meal with it</li>
+                    <li> Snack on it if you have it in your kitchen</li>
+                    <li> Draw this ingredient</li>
+                </div>
+
+                <div class="shape">
+                    <h3 class="blob-text"> I see... </h3>
+                    <div class="moving-shape"></div>
+                    <div class="moving-shape-2"></div>
+                    <div class="moving-shape-3"></div>
+                </div>
+
+            </section>
+            <div class="divider"></div>
+
+            <div class="pages">
+                <div class="page-1">
+                    <button class="page1" onclick="location.href='#nav'">
+                        <svg class="slide" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="black" fill-opacity="1"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="page-2">
+                    <button class="page2" onclick="location.href='#secondpage'">
+                        <svg class="slide" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="black" fill-opacity="1"/>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </div>
+        </main>
+    </header>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

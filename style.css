@@ -1,0 +1,226 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+nav {
+    min-height: 10vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+nav h3 {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.divider {
+    min-height: 10vh;
+}
+
+.page {
+    min-height: 80vh;
+
+
+}
+
+.page.first {
+    background: url("img/undraw_mint_tea_7su0 1.svg") no-repeat #E9E4F0;
+    margin-left: 8em;
+    margin-right: 8em;
+    background-position-y: bottom;
+    background-position-x: 8%;
+    display: grid;
+    grid-template-columns: 8% 24% 60% 8%;
+    align-items: center;
+
+}
+
+.details.first {
+    grid-column: 3/4;
+    white-space: nowrap;
+    margin-top: 100px;
+    height: 500px;
+    width: 600px;
+}
+
+.details.first h1 {
+    font-size: 36px;
+}
+
+.details.first p {
+    font-size: 24px;
+}
+
+.page.second {
+    background: url("img/undraw_gone_shopping_vwmc 1.svg") no-repeat #E9E4F0;
+    background-position-y: bottom;
+    background-position-x: 85%;
+    z-index: -3;
+    display: grid;
+    grid-template-columns: 8% 49% 35% 8%;
+    align-items: center;
+    margin-left: 8em;
+    margin-right: 8em;
+
+}
+
+.details.second {
+    grid-column: 2;
+    margin-top: 100px;
+    height: 500px;
+    width: 600px;
+}
+
+.details.second h2 {
+    font-size: 36px;
+}
+
+.details.second p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.details.second li {
+    white-space: nowrap;
+    padding: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.page1 {
+    border: none;
+    background: none;
+    height: 12px;
+    width: 12px;
+}
+
+.page1:focus {
+    outline:none;
+}
+
+.page2 {
+    border: none;
+    background: none;
+    height: 12px;
+    width: 12px;
+}
+
+.page2:focus {
+    outline:none;
+}
+
+.pages {
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pages svg {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.5);
+    padding: 30px;
+}
+
+.pages svg:hover {
+    animation: dot 0.7s ease-in-out infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes dot {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+.shape {
+    grid-column: 3;
+    margin-bottom: 30vh;
+}
+
+.shape h3 {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    /*padding: 2.5em;*/
+    padding: 2.5em 0 0 1.5em;
+}
+
+.moving-shape {
+    animation: rotate 5s linear infinite;
+    transition: 0.9s linear;
+    background: #91C499;
+    position: absolute;
+    z-index: 3;
+    height: 17em;
+    width: 17em;
+    border-radius: 60% 50% 50% 70% / 60% 50% 70% 40%;
+    opacity: 0.8;
+}
+
+.moving-shape-2 {
+    animation: rotate 5s linear infinite;
+    transition: 0.9s linear;
+    position: absolute;
+    z-index: 2;
+    background: #FFC9B9;
+    height: 17.5em;
+    width: 17.5em;
+    border-radius: 60% 50% 50% 70% / 60% 50% 70% 40%;
+    opacity: 0.8;
+}
+
+.moving-shape-3 {
+    animation: rotate 5s linear infinite;
+    transition: 0.9s linear;
+    position: absolute;
+    z-index: 1;
+    background: #FFAA5A;
+    height: 18em;
+    width: 18em;
+    border-radius: 60% 50% 50% 70% / 60% 50% 70% 40%;
+    opacity: 0.8;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .pages {
+        grid-template-columns: 8% 1fr 8%;
+        align-items: center;
+    }
+}
